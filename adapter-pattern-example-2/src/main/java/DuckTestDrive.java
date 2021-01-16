@@ -1,7 +1,3 @@
-import headfirst.designpatterns.adapter.ducks.challenge.Drone;
-import headfirst.designpatterns.adapter.ducks.challenge.DroneAdapter;
-import headfirst.designpatterns.adapter.ducks.challenge.SuperDrone;
-
 public class DuckTestDrive {
 	public static void main(String[] args) {
 		MallardDuck duck = new MallardDuck();
@@ -18,11 +14,7 @@ public class DuckTestDrive {
 
 		System.out.println("\nThe TurkeyAdapter says...");
 		testDuck(turkeyAdapter);
-		
-		// Challenge
-		Drone drone = new SuperDrone();
-		Duck droneAdapter = new DroneAdapter(drone);
-		testDuck(droneAdapter);
+
 	}
 
 	static void testDuck(Duck duck) {
